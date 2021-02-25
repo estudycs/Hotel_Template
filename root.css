@@ -1,0 +1,811 @@
+* {
+    box-sizing: border-box;
+  }
+
+  
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+    
+  }
+body{
+    font-family: "Cabin", sans-serif;
+    margin: 0px;
+}
+header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 10px;
+    padding: 0px;
+  }
+  .logo{
+    margin-left: 20px;
+    padding: 11px;
+    
+}
+.logo a{
+    font-family: 'Alike';
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: 1000;
+   
+
+}
+.menu{
+    text-align: end;
+   
+}
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    margin-right: 30px;
+}
+  ul.nav li{
+    display: inline-block;
+   padding: 20px 20px;
+
+}
+ul.nav li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #19191a;
+  border-bottom-style:none;  
+  
+}
+ul.nav li a:hover{
+    border-bottom-style: solid;
+    border-color: orangered;
+
+}
+ul.nav li a:active{
+    border-bottom-style: solid;
+    border-color: orangered;
+    
+}
+
+
+/*Home page*/
+.homeg-container{
+    
+    padding: 15px;
+    background: oldlace url(/html/img/pexels-ahmed-abdelaziz-453201.jpg) no-repeat fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    z-index: -1;
+}
+.text{
+z-index: 1;
+
+}
+.main-txt{
+    margin-top: 140px;
+    margin-left: 28px;
+}
+.main-txt h1{
+    font-size: 80px;
+    line-height: 90px;
+    color: #ffffff;
+    margin-bottom: 16px;
+    font-family: "Lora", serif;
+    font-weight: normal;
+}
+.main-txt p{
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+.main-txt a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 16px;
+    border-bottom-style: solid;
+    border-color: orange;
+    background-color: transparent;
+    
+}
+
+.form{
+    display: grid;
+    grid-template-columns: auto;
+    width: 60%;
+    float: right;
+    background-color: white;
+    margin: 20px 35px;
+    border-radius: 4px;
+    padding: 10px 43px;
+}
+.form h2{
+    font-size: 30px;
+    
+    font-weight: 400;
+    font-family: "Lora", serif;
+    text-align: center;
+    
+}
+.check label{
+    font-size: 14px;
+    color: #707079;
+    display: block;
+    margin: 10px 0px;
+}
+.check input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    font-size: 16px;
+    color: #19191a;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 20px;
+}
+.guest label{
+    font-size: 14px;
+    color: #707079;
+    display: block;
+    margin: 10px 0px;
+}
+.guest select{
+    border-radius: 2px;
+    border: 1px solid #ebebeb;
+    height: 50px;
+    line-height: 50px;
+    outline: none;
+    padding-left: 20px;
+    width: 100%;
+    float: none;
+}
+.rooms label{
+    font-size: 14px;
+    color: #707079;
+    display: block;
+   margin: 10px 0px;
+}
+.rooms select{
+    border-radius: 2px;
+    border: 1px solid #ebebeb;
+    height: 50px;
+    line-height: 50px;
+    outline: none;
+    padding-left: 20px;
+    width: 100%;
+    float: none;
+}
+.booking-form .form .check button{
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid #dfa974;
+    border-radius: 2px;
+    color: #dfa974;
+    font-weight: 500;
+    background: transparent;
+    width: 100%;
+    height: 46px;
+    margin: 30px 0px;
+
+}
+input[type=date]::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-month-field{
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-day-field {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+    display: none;
+}
+
+
+
+/*About us*/
+.about-container{
+    position: relative;
+     width: 100%;
+     height: 600px;
+     padding-top: 96px;  
+     
+ }    
+ .abt-text{
+    display: inline-block;
+    position: absolute;
+    width: 572px;
+    
+    height: 560px;
+    left: 0;
+ padding: 10px 10px;
+ margin: 5px 5px;
+ text-align: center;
+ }
+ .abt-main-txt{
+ padding-left: 60px;
+ padding-top: 0x;
+ padding-right: 0px;
+ }
+ .abt-text h5{
+     font-family: "Cabin", sans-serif;
+     color: orange;
+     font-size: 14px;
+     letter-spacing: 2px;
+ 
+ }
+ .abt-text h1{
+     font-family: "Lora", serif;
+     font-weight: normal;
+     font-size: 44px;
+     color: black;
+     line-height: 58px;
+     margin-bottom: 22px;
+ 
+ }
+ .abt-text p{
+     font-family: "Cabin", sans-serif;
+     color: grey;
+     line-height: 26px;
+     margin-bottom: 15px;
+ }
+ .abt-text a{
+     font-family: "Cabin", sans-serif;
+     border-bottom-style: solid;
+     letter-spacing: 2px;
+     text-decoration: none;
+     color: black;
+     border-color: orange;
+     font-size: 13px;
+     font-weight: 600;
+     line-height: 10px;
+ 
+ }
+ 
+ .abt-img{
+    display: inline-block;
+    position: absolute;
+    width: 47%;
+    height: 560px;
+    right: 20px;
+    
+     padding: 10px 10px;
+     margin: 5px 5px;
+ }
+ .abt-img .img1{
+     display: inline-block;
+     position: absolute;
+     left: 0;
+     width: 255px;
+     height: 355px;
+     margin: 5px 30px;
+    
+ }
+ .abt-img .img2{
+     display: inline-block;
+     position: absolute;
+     right: 0;
+     width: 255px;
+     height: 355px;
+     margin: 5px 36px;
+     
+ }
+ .abt-img img{
+     position: absolute;
+     width: 100%;
+     height: 355px;
+ }
+ 
+.aboutusg-container{
+    padding: 15px;
+    display: grid;
+
+}
+
+
+
+
+
+
+
+
+
+.servicesg-container{
+   
+    padding: 5px 5px;
+    background-color: white;
+    
+}
+.serv-heading{
+   
+    padding: 5px 5px;
+    margin: 5px 5px;
+    text-align: center;
+
+}
+.serv-heading h5{
+    
+    font-family: "Cabin", sans-serif;
+    font-size: 14px;
+    color: #f8be84;
+    
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.serv-heading h1{
+    font-size: 44px;
+    color: #19191a;
+    line-height: 58px;
+    margin-top: 10px;
+    font-weight: 200;
+    font-family: "Lora", serif;
+}
+.services{
+    overflow: auto;
+  
+    padding: 5px 5px;
+    margin: 5px 5px;
+    text-align: center;
+    
+}
+.service{
+    float: left;
+    height: 250px;
+    width: 30%;
+    margin: 10px 20px;
+    display: inline;
+    color: black;
+    padding: 30px 35px 18px;
+    /*background-color: #f8be84;*/
+}
+.service i{
+    display: inline-block;
+    color:#f8be84 ;
+    font-size: 52px;
+}
+.service h3{
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-size: 23px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.service p{
+    font-family: "Cabin", sans-serif;
+    color: grey;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 0 15px;
+}
+.service:hover{
+    background-color: #f8be84;
+    color: white;
+}
+.service:hover h3{
+    color: white;
+}
+.service:hover p{
+    color: white;
+}
+.service:hover i{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+.roomsg-container .row .rooms{
+    height: 600px;
+}
+#room1{
+    
+    height: 550px;
+    margin-right: 8px;
+    background-image: url("/html/img/room_img1.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+#room2{
+    
+    height: 550px;
+    margin-right: 8px;
+    margin-left: 8px;
+    background-image: url("/html/img/room_img2.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+#room3{
+    
+    height: 550px;
+    margin-right: 8px;
+    margin-left: 8px;
+    background-image: url("/html/img/room_img3.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+#room4{
+    
+    height: 550px;
+    
+    margin-left: 8px;
+    background-image: url("/html/img/room_img4.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+.rooms .txt h2{
+    color: white;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: lora,serif;
+}
+.rooms .txt h3{
+    color: orange;
+    font-size: 36px;
+    font-family: lora,serif;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.rooms .txt span{
+    font-family: cabin,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+.rooms {
+    position: relative;
+}
+.rooms .txt{
+    position: absolute;
+    left: 45px;
+    right: 25px;
+    bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.testimonialsg-container{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.testimonialsg-container h5{
+  font-size: 14px;
+  color: orange;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.testimonialsg-container h2{
+  font-size: 43px;
+  font-weight: 400;
+  font-family: lora,serif;
+  color: black;
+  line-height: 58px;
+  margin-top: 10px;
+}
+.testimonialsg-container p{
+  font-size: 20px;
+  color: grey;
+  line-height: 30px;
+  margin-bottom: 50px;
+  font-family: cabin,sans-serif;
+}
+.testimonialsg-container .testimonial{
+    padding: 0px 205px 0px;
+
+}
+.testimonialsg-container .rating .ra{
+  display: inline-block;  
+ 
+}
+.testimonialsg-container .rating img{
+    width: 105px;
+}
+.testimonialsg-container .rating h4{
+  font-size: 20px;
+  color: #19191a;
+  font-weight: 400;
+  font-family: lora,serif;
+}
+
+
+
+
+
+
+.newsg-container .news{
+    height: 650px;
+    margin-bottom: 75px;
+    
+  }
+  .newsg-container .row{
+      margin-left: 20px;
+      margin-left: 20px;
+  }
+  .newsg-container .txt h5{
+    font-size: 14px;
+    color: orange;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: cabin,sans-serif;
+    text-align: center;
+  }
+  .newsg-container .txt h2{
+    font-size: 44px;
+    color: black;
+    line-height: 58px;
+    margin-top: 10px;
+    font-weight: 400;
+    font-family: lora,serif;
+    text-align: center;
+
+  }
+#news1{
+    background-image: url("/html/img/news-img1.jpg");
+    background-size: cover;
+    height: 450px;
+    margin: 10px 10px;
+    border: 1px solid white;
+    border-radius: 7px;
+    z-index: -1;
+    position: relative;
+}
+#news1 .news-txt{
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#news2{
+    background-image: url("/html/img/news-img2.jpg");
+    background-size: cover;
+    height: 450px;
+    margin: 10px 10px;
+    border: 1px solid white;
+    border-radius: 7px;
+    z-index: -1;
+    position: relative;
+}
+#news2 .news-txt{
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#news3{
+    background-image: url("/html/img/news-img3.jpg");
+    background-size: cover;
+    height: 450px;
+    margin: 10px 10px;
+    border: 1px solid white;
+    border-radius: 7px;
+    z-index: -1;
+    position: relative;
+}
+#news3 .news-txt{
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#news4{
+    background-image: url("/html/img/news-img4.jpg");
+    background-size: cover;
+    height: 400px;
+    margin: 10px 10px;
+    border: 1px solid white;
+    border-radius: 7px;
+    z-index: -1;
+    position: relative;
+}
+#news4 .news-txt{
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#news5{
+    background-image: url("/html/img/news-img5.jpg");
+    background-size: cover;
+    height: 400px;
+    margin: 10px 10px;
+    border: 1px solid white;
+    border-radius: 7px;
+    z-index: -1;
+    position: relative;
+}
+#news5 .news-txt{
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.newsg-container .news-txt span{
+    color:white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background: orange;
+    padding: 5px 15px;
+    border-radius: 2px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: cabin,sans-serif;
+}
+.newsg-container .news-txt h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: lora,serif;
+    color: white;
+    line-height: 1.2;
+}
+.newsg-container .news-txt i{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+.contactusg-container{
+    background-color: rgba(19, 19, 32, 0.836);
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 50px;
+    
+}
+.contactusg-container .logo-c a{
+    font-family: 'Alike';
+    font-size: 30px;
+    text-decoration: none;
+    color:white;
+    font-weight: 1000;
+ 
+}
+.contactusg-container .logo-c{
+    margin-bottom: 12px;
+}
+.contactusg-container .social-media a{
+    text-decoration: none;
+    font-family: cabin,sans-serif;
+    font-size: 16px;
+    color:white;
+   
+}
+.contactusg-container p{
+    font-size: 16px;
+    color: #6b6b6b;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 0 15px;
+    color:grey;
+    font-family: "Cabin", sans-serif;
+    
+}
+
+.contactusg-container .contactus{
+    height: 250px;
+    
+   /* background-color: rgba(19, 19, 32, 0.836);*/
+}
+
+.contactusg-container h5{
+    color: orange;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family: cabin,sans-serif;
+    margin-bottom: 20px;
+
+}
+.contactusg-container .contactus form input{
+    display: inline-block;
+    border: none;
+    height: 50px;
+    border-radius: 2px;
+    background: #484a52;
+   
+}
+.contactusg-container .contactus form button{
+    display: inline-block;
+    border: none;
+    border-radius: 0 2px 2px 0;
+    height: 50px;
+    border-radius: 2px;
+    background-color: orange;
+    width: 50px;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+
+
+
+
+footer{
+    background-color: rgba(19, 19, 32, 0.836);
+    
+}
+footer p{
+    font-size: 16px;
+    font-family: cabin,sans-serif;
+    color: #6b6b6b;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 11px 0 15px;
+   
+}
+
+footer li {
+    display: inline-block;
+    margin: 0px 10px;
+    font-size: 16px;
+  
+   
+}
+footer a{
+    text-decoration: none;
+    background-color: transparent;
+    color: #aaaab3;
+    
+}
+
